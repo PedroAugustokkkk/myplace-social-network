@@ -1,12 +1,22 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import { TopNavigation } from "@/components/layout/top-navigation";
+import { BottomNavigation } from "@/components/layout/bottom-navigation";
+import { Feed } from "@/components/social/feed";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
+    <div className="min-h-screen bg-feed-background">
+      <TopNavigation />
+      
+      <main className="container mx-auto px-4 py-6 max-w-2xl">
+        <div className="mb-6">
+          <h1 className="text-2xl font-bold text-text-primary mb-2">Your Feed</h1>
+          <p className="text-text-secondary">Discover what's happening in the SocialFi community</p>
+        </div>
+        
+        <Feed />
+      </main>
+
+      <BottomNavigation />
     </div>
   );
 };
