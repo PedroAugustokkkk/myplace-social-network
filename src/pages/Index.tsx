@@ -1,19 +1,14 @@
 import { TopNavigation } from "@/components/layout/top-navigation";
 import { BottomNavigation } from "@/components/layout/bottom-navigation";
-import { Feed } from "@/components/social/feed";
+import { InstagramFeed } from "@/components/social/instagram-feed";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-feed-background">
       <TopNavigation />
       
-      <main className="container mx-auto px-4 py-6 max-w-2xl">
-        <div className="mb-6">
-          <h1 className="text-2xl font-bold text-text-primary mb-2">Your Feed</h1>
-          <p className="text-text-secondary">Discover what's happening in the SocialFi community</p>
-        </div>
-        
-        <Feed />
+      <main className="py-6 pb-20">
+        <InstagramFeed />
       </main>
 
       <BottomNavigation />
